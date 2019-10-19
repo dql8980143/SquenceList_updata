@@ -11,51 +11,51 @@ int main()
 	while(key)
 	{
 		sqlist.menuDisplay();
-		cout<<"ÇëÊäÈëÏëÒªÖ´ĞĞµÄ¹¦ÄÜ±àºÅfunction:";
+		cout<<"è¯·è¾“å…¥æƒ³è¦æ‰§è¡Œçš„åŠŸèƒ½ç¼–å·function:";
 		cin>>function;
 		switch(function)
 		{
 		case 1:
 			sqlist.listStart();break;
 		case 2:
-			cout<<"ÇëÊäÈë³õÊ¼Ë³Ğò±íµÄÊı¾İÌî³ä¸öÊınum:";
+			cout<<"è¯·è¾“å…¥åˆå§‹é¡ºåºè¡¨çš„æ•°æ®å¡«å……ä¸ªæ•°num:";
 			cin>>num;
 			sqlist.fillData(num);break;
 		case 3:
 			sqlist.disPlay();break;
 		case 4:
-			cout<<"ÇëÊäÈëÈ¡ÖµµÄÎ»ÖÃn:";
+			cout<<"è¯·è¾“å…¥å–å€¼çš„ä½ç½®n:";
 			cin>>n;
-			printf("µÚ%d¸öÊı¾İ:%d\n",n,sqlist.getValue(n));
+			printf("ç¬¬%dä¸ªæ•°æ®:%d\n",n,sqlist.getValue(n));
 			break;
 		case 5:
-			cout<<"ÇëÊäÈë²éÕÒµÄÊı¾İe:";
+			cout<<"è¯·è¾“å…¥æŸ¥æ‰¾çš„æ•°æ®e:";
 			cin>>e;
-			printf("Êı¾İ%dµÄÎ»ÖÃ:%d\n",e,sqlist.seekValue(e));
+			printf("æ•°æ®%dçš„ä½ç½®:%d\n",e,sqlist.seekValue(e));
 			break;
 		case 6:
-			cout<<"ÇëÊäÈëĞÂ²åÈëµÄÊı¾İÖµe:";
+			cout<<"è¯·è¾“å…¥æ–°æ’å…¥çš„æ•°æ®å€¼e:";
 			cin>>e;
-			cout<<"ÇëÊäÈëĞÂ²åÈëµÄÊı¾İÎ»ÖÃn:";
+			cout<<"è¯·è¾“å…¥æ–°æ’å…¥çš„æ•°æ®ä½ç½®n:";
 			cin>>n;
 			sqlist.addDate(n,e);
 			break;
 		case 7:
-			cout<<"ÇëÊäÈëÉ¾³ıµÄÊı¾İÎ»ÖÃ:";
+			cout<<"è¯·è¾“å…¥åˆ é™¤çš„æ•°æ®ä½ç½®:";
 			cin>>n;
 			sqlist.subData(n,e);
-			printf("É¾³ıË³Ğò±íµÚ%d¸öÊı¾İ:%d\n",n,e);
+			printf("åˆ é™¤é¡ºåºè¡¨ç¬¬%dä¸ªæ•°æ®:%d\n",n,e);
 			break;
 		case 8:
-			sqlist.writeDate();
+			sqlist.readDate();
 			break;
 		case 9:
-			sqlist.readData();
+			sqlist.writeData();
 			break;
 		default:
-			cout<<"ÊäÈëµÄ¹¦ÄÜ±àºÅfunction²»ºÏÀí"<<endl;
+			cout<<"è¾“å…¥çš„åŠŸèƒ½ç¼–å·functionä¸åˆç†"<<endl;
 		}
-		cout<<"ÊÇ·ñ¼ÌĞøÖ´ĞĞÆäËû¹¦ÄÜ?	ÊäÈë1-¼ÌĞø	0-ÍË³ö:"<<endl;
+		cout<<"æ˜¯å¦ç»§ç»­æ‰§è¡Œå…¶ä»–åŠŸèƒ½?	è¾“å…¥1-ç»§ç»­	0-é€€å‡º:"<<endl;
 		cin>>key;
 		system("cls");
 	}
